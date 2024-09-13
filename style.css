@@ -156,12 +156,175 @@ align-items: center;
 
 .skills .skills-sect{
     width: 70%;
-    border: 1px solid black;
 }
 
 .skills .skills-sect p{
     letter-spacing: 1.02;
     line-height: 1.5;
     text-indent: 1rem;
-    
+
 }
+
+.diversification{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: .5rem 0;
+
+}
+ .icons .icon-img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 1px solid red;
+    padding: .5rem;
+    overflow: hidden;
+    background-color: #E9EAEC;
+    opacity: 1;
+}
+ .icons .icon-img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+
+}
+
+.skill-title{
+    padding: .5rem 0;
+    text-transform: capitalize;
+}
+
+
+/* THE PROJECTS SECTION */
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projects h1{
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: 800;
+}
+
+.projects .projects-sect{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.projects .projects-sect .cards{
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.cards .project-card{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: .5rem;
+
+}
+
+
+.cards .project-card img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: .5s ease;
+}
+
+.cards .project-card:hover img{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.projects-sect .abt-project{
+    position: absolute;
+    bottom: 0;
+    padding: .5rem;
+    background-color: white;
+   transform: translateY(70%);
+   transition: .5s ease;
+}
+.abt-project h2{
+    padding-bottom: .5rem;
+}
+.cards:hover .abt-project{
+transform: translateY(0);
+}
+
+.abt-project button{
+    padding: .5rem 1rem;
+    margin-top: .5rem;
+border-radius: .2rem;
+border: none;
+background-color: blue;
+color: white    ;
+}
+
+
+ /* THE CONTACTS SECTION IS HERE  */
+.contacts-1 h1{
+     font-size: 2rem;
+     text-align: center;
+    padding: 1.5rem;
+    font-weight: 700;
+}
+.contacts {
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.contacts-left{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts-left .cont-icon{
+    border: 2px solid brown;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+    justify-content: start;
+    gap: 1rem;
+}
+
+.contacts-left .cont-icon .icon{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.details h2, p{
+    padding: .2rem 0;
+}
+.contacts-left .cont-icon .icon img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.contacts-right{
+    border: 2px solid blue;
+}
+
+
