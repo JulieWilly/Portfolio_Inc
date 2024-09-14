@@ -392,9 +392,13 @@ font-size: 2rem;
    transform: translateY(70%);
    transition: .5s ease;
    width: 100%;
+   color: #00ABF0;
 }
 .abt-project h2{
     padding-bottom: .5rem;
+}
+.abt-project p{
+    color: #081B29;
 }
 .cards:hover .abt-project{
 transform: translateY(0);
@@ -580,6 +584,13 @@ footer h3{
 
 
 @media screen and (max-width:500px) {
+   .head-sect{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
     .heros{
         display: flex;
         flex-direction: column;
@@ -609,7 +620,7 @@ footer h3{
         text-align: center;
     }
 
-
+   
 }
 @media screen and (min-width:501px) and (max-width:800px) {
 .heros {
