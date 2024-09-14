@@ -312,7 +312,10 @@ border: none;
 background-color: blue;
 color: white    ;
 }
-
+.abt-project button a{
+    text-decoration: none;
+    color: white;
+}
 
  /* THE CONTACTS SECTION IS HERE  */
 .contacts-1 h1{
