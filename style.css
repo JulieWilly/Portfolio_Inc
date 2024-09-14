@@ -289,6 +289,7 @@ color: white    ;
 .contacts {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
 }
 .contacts-left{
     display: flex;
@@ -325,7 +326,7 @@ color: white    ;
     flex-direction: column;
     align-items: center;
     background-color: #081B29;
-    width: 80%;
+    width: 75%;
 }
 
 .contacts-right h2{
@@ -372,6 +373,56 @@ color: white    ;
     background-color: blue;
     color: white;
     border-radius: .2rem;
-    
+}
+
+ /* THE FOOTER SECTION  */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    border-top: 1px solid red;
+    padding: 1rem;
+
+}
+
+footer .footer-sect{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+.footer-sect h2{
+    font-size: 1.1rem;
+}
+.social-icons{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    transition: .5s ease;
+}
+
+.social-icons:hover{
+    transform: scale(1.1);
+}
+
+.social-icons .icon-img{
+    width: 3rem;
+    height: 3rem;
+    padding: .8rem;
+    border: 1px solid red;
+    border-radius: 50%;
+}
+
+.social-icons .icon-img img{
+    width: 100%;
+    height: 100%;
+}
+
+footer h3{
+    margin-top: 2.2rem;
+    text-transform: capitalize;
 }
 
