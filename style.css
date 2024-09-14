@@ -22,7 +22,9 @@ header{
     z-index: 999;
     width: 100%;
 }
-
+header h2 span{
+    color: #00ABF0;
+}
 nav ul{
     display: flex;
     flex-direction: row;
@@ -218,6 +220,7 @@ nav ul{
     font-size: 1.2rem;
     font-weight: 600;
     display:inline-flex;
+    color: #00ABF0;
     align-items: center;
     justify-content: center;
 }
