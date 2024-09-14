@@ -586,19 +586,35 @@ footer h3{
 @media screen and (max-width:500px) {
    .head-sect{
     display: flex;
+
     flex-direction: column;
     align-items: center;
     justify-content: center;
    }
+   .icons {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+   }
     .heros{
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 2rem;
+        padding-top: 3rem;
+        align-items: center;
     }
     .heros .heros-right .img {
         display: none;
         
+    }
+    .introduction h2{
+        font-size: .5rem;
+    }
+
+    .btns {
+        display: flex;
+        flex-direction: column;
     }
 
     .abt-sect{
