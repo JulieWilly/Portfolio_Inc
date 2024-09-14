@@ -49,6 +49,7 @@ nav ul{
     grid-template-rows: auto;
     grid-template-areas: 'heros-left heros-right';
     height: 100Vh;
+    width: 100%;
 }
 
 .heros-left{
@@ -597,16 +598,13 @@ footer h3{
     flex-wrap: wrap;
    }
     .heros{
-        width: 100%;
         display: flex;
-        flex-direction: column;
         align-items: center;
-        padding-top: 3rem;
+        padding-top: 3.5rem;
         align-items: center;
     }
     .heros .heros-right .img {
-        display: none;
-        
+        display: none; 
     }
     .introduction h2{
         font-size: .5rem;
@@ -618,7 +616,6 @@ footer h3{
     }
 
     .abt-sect{
-
         display: flex;
         flex-direction: column;
         align-items: center;
