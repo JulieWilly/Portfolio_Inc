@@ -295,6 +295,7 @@ font-size: 2rem;
     background-color: white;
    transform: translateY(70%);
    transition: .5s ease;
+   width: 100%;
 }
 .abt-project h2{
     padding-bottom: .5rem;
