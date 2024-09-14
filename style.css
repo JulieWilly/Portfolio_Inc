@@ -5,14 +5,22 @@
 }
 
 body{
-    margin: 1rem 2rem;
+    /* margin: 1rem 2rem; */
+    /* background-color: #081B29; */
+    /* color: white; */
 }
 
 header{
+    background-color: #0B293F;
     display: flex;
+    color: white;
+    padding: 1.5rem;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
 }
 
 nav ul{
@@ -22,14 +30,18 @@ nav ul{
     justify-content: space-around;
     gap: 1rem;
     list-style: none;
+
 }nav ul li a{
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 1.2rem;
 }
-
+/* nav ul li a:hover{
+    color: white;
+} */
  /* HEROS SECTION  */
 .heros{
+    margin: 0rem 3rem;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
@@ -40,6 +52,7 @@ nav ul{
 .heros-left{
     grid-area: heros-left;
     display: flex;
+    margin-top: 3rem;
     align-items: center;
 }
 
@@ -77,27 +90,31 @@ nav ul{
 
 
 .heros-right{
+    margin-top: 3rem;
     grid-area: heros-right;
     display: flex;
     justify-content: center;
 }
 
 .heros-right .img{
-    border: 1px solid black;
     height: 70%;
-    display: flex;
-    align-items: end;
-    justify-content: center;
+    display: grid;
+    place-content: center;
+    margin-top: 3rem;
+        /* display: flex;
+        align-items: end;
+        justify-content: center; */
 }
 
-.heros-right .img .dev-img{
-    width: 20rem;
-    height: 20rem;
+.heros-right .img .dev-heros-img{
+    width: 23rem;
+    height: 23rem;
+    border: 1px solid black;
     border-radius: 50%;
     overflow: hidden;
 }
 
-.heros-right .img .dev-img img{
+.heros-right .img .dev-heros-img img{
     width: 100%;
     height: 100%;
     display: block;
@@ -106,52 +123,65 @@ nav ul{
 
  /* THE ABOUT SECTION   */
 .about{
-    height: 100vh;
-    border: 1px solid black;
     display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* height: 100vh; */
+    margin-top: 1.5rem;
+
+}
+
+.about h1{
+    font-size: 2rem;
+        padding: 3.5rem 0;
+        margin-top: 1rem;
+        font-weight: 800;
+}
+
+.abt-sect{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+    gap: 2rem;
     justify-content: center;
+}
+
+.dev-img {
+    width:100%;
+    padding:0 1rem;
+    height: 30rem;
+    /* box-shadow: 3px 4px 1px 1px rgba( 0,0,0, .6); */
+}
+
+.dev-img img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: .5s ease;
+}
+.dev-img img:hover{
+    transform: scale(1.05);
+}
+
+.education{
+    margin-top: 1rem;
     
-    /* flex-direction: column; */
 }
-
-.about .about-sect{
-    width: 70%;
-}
-.about .about-sect h1{
-    text-align: center;
-    font-size: 2.3rem;
-    padding: 1rem;
-    font-weight: 700;
-}
-.about .about-sect h1 span{
-    color: blue;
-}
-
-.about .about-sect .about-me{
-    padding: .5rem;
-    text-indent: 1rem;
-    letter-spacing: 1.8;
-    line-height:1.5;
-}
-.about .about-me{
-    border: 2px solid yellow;
-}
- 
-
-
  /* SKILLS section */
 
 .skills{
     display: flex;
-    border: 1px solid red;
 justify-content: center;
 flex-direction: column;
 align-items: center;
+margin-top: 1rem;
 }
 .skills h1{
-    text-align: center;
-    font-size: 1.5rem;
-    padding: .5rem;
+font-size: 2rem;
+        padding: 3.5rem 0;
+    margin-top: 1rem;
+    font-weight: 800;
 }
 
 .skills .skills-sect{
@@ -182,7 +212,6 @@ align-items: center;
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
-    border: 1px solid red;
     padding: .5rem;
     overflow: hidden;
     background-color: #E9EAEC;
@@ -207,16 +236,21 @@ align-items: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 1rem;
 }
 .projects h1{
     font-size: 2rem;
-    padding: 1rem;
+            padding: 3.5rem 0;
+    margin-top: 1rem;
     font-weight: 800;
 }
 
 .projects .projects-sect{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     gap: 2rem;
 }
@@ -283,10 +317,13 @@ color: white    ;
 .contacts-1 h1{
      font-size: 2rem;
      text-align: center;
-    padding: 1.5rem;
+
+    margin-top: 1rem;
     font-weight: 700;
+    padding: 1.5rem;
 }
 .contacts {
+    margin:0 3rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
@@ -400,7 +437,7 @@ footer .footer-sect{
     display:flex;
     flex-direction: column;
     align-items: center;
-    gap: .5rem;
+    gap: 1rem;
     transition: .5s ease;
 }
 
@@ -412,9 +449,9 @@ footer .footer-sect{
     width: 3rem;
     height: 3rem;
     padding: .8rem;
-    border: 1px solid red;
     border-radius: 50%;
 }
+
 
 .social-icons .icon-img img{
     width: 100%;
@@ -426,3 +463,68 @@ footer h3{
     text-transform: capitalize;
 }
 
+
+
+@media screen and (max-width:500px) {
+    .heros{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .heros .heros-right .img {
+        display: none;
+        
+    }
+
+    .abt-sect{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer h3{
+        text-align: center;
+    }
+
+
+}
+@media screen and (min-width:501px) and (max-width:800px) {
+.heros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heros .heros-right .img {
+        display: none;
+
+    }
+
+    .abt-sect {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer h3 {
+        text-align: center;
+    }
+}
